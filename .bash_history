@@ -101,3 +101,64 @@
   398  touch .bash_history
   399  git history
   400  history
+$ rmdir -h
+rmdir: unknown option -- h
+Try 'rmdir --help' for more information.
+
+Gouband@STA6401444 MINGW64 ~/Desktop/Formation/workspace/eval_Nom_session (main)
+$ rmkdir
+bash: rmkdir: command not found
+
+Gouband@STA6401444 MINGW64 ~/Desktop/Formation/workspace/eval_Nom_session (main)
+$ rmdir eval_Nom_session/
+
+Gouband@STA6401444 MINGW64 ~/Desktop/Formation/workspace/eval_Nom_session (main)
+$ ls
+README.md  create_user.php  index.html  script/  style/  view_all_user.php
+
+Gouband@STA6401444 MINGW64 ~/Desktop/Formation/workspace/eval_Nom_session (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    eval_Nom_session
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Gouband@STA6401444 MINGW64 ~/Desktop/Formation/workspace/eval_Nom_session (main)
+$ git rm eval_Nom_session
+rm 'eval_Nom_session'
+
+Gouband@STA6401444 MINGW64 ~/Desktop/Formation/workspace/eval_Nom_session (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    eval_Nom_session
+
+
+Gouband@STA6401444 MINGW64 ~/Desktop/Formation/workspace/eval_Nom_session (main)
+$ git commit -m "annulation du dossier inutile eval nom de session"
+[main 3ffa4c7] annulation du dossier inutile eval nom de session
+ 1 file changed, 1 deletion(-)
+ delete mode 160000 eval_Nom_session
+
+Gouband@STA6401444 MINGW64 ~/Desktop/Formation/workspace/eval_Nom_session (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 251 bytes | 251.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/DannyGouband/eval_Nom_session.git
+   99e7c2f..3ffa4c7  main -> main
+
+Gouband@STA6401444 MINGW64 ~/Desktop/Formation/workspace/eval_Nom_session (main)
+$
