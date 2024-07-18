@@ -1,0 +1,136 @@
+h1 {
+  color: skyblue;
+}
+
+h2 {
+  color: blue;
+}
+
+p {
+  color: grey;
+}
+
+body {
+  margin: 20px 20px;
+  padding: 20px 20px;
+}
+
+#container {
+  display: grid;
+  border: 2px antiquewhite none;
+  width: 1500px;
+  height: 2300px;
+  grid-template-columns: 1fr 50% 1fr;
+  grid-template-rows: 100px 1fr 1fr 1fr 100px;
+}
+
+#contact {
+  grid-column: 1/span 3;
+  grid-row: 4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: aliceblue;
+}
+
+footer {
+  grid-column: 2;
+  grid-row: 5;
+  background-image: url("beautiful-night-sky-with-shiny-stars.jpg");
+}
+
+#about {
+  display: flex;
+  grid-column: 1/span 3;
+  grid-row: 2;
+  text-align: center;
+  background-color: aliceblue;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#portfolio {
+  display: flex;
+  grid-column: 1/span 3;
+  grid-row: 3;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header {
+  grid-column: 1/span 3;
+  grid-row: 1;
+  text-align: center;
+  background-image: url("beautiful-night-sky-with-shiny-stars.jpg");
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  color: white;
+}
+
+#ul2 {
+  float: left;
+}
+
+img {
+  border: 1px solid lightgrey;
+}
+
+article {
+  border: 2px solid cornflowerblue;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px cornflowerblue;
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+article:hover {
+  transform: scale(1.1);
+  background-color: lightgrey;
+}
+
+#ul2 {
+  color: black;
+}
+
+@media screen and (max-width: 1100px) {
+  #container {
+    flex-flow: row wrap;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 700px) {
+  #container {
+    flex-flow: row wrap;
+    width: 70%;
+  }
+}
+form {
+  border: 2px solid cadetblue;
+  border-radius: 9px;
+}
+
+.submit:hover {
+  background-color: cadetblue;
+}
+
+a {
+  color: white;
+}
+a:hover {
+  background-color: cadetblue;
+}
+
+/*# sourceMappingURL=eval1.css.map */
